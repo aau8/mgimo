@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			{% include "sections/header.html" %}
+
+			<main class="main">
+				<div class="main__container">
+					<div class="main__body">
+						<div class="main__content">
+							<span class="label main__label">Международная конференция</span>
+							<h1 class="title-1 main__title">
+								ВЗАИМОДЕЙСТВИЕ ВУЗОВ И РАБОТОДАТЕЛЕЙ В НОВЫХ УСЛОВИЯХ РЫНКА ТРУДА
+							</h1>
+							<div class="main__info-container">
+								<div class="main__info">
+									<div class="main__info-icon">
+										<svg><use href="./assets/img/sprite.svg#calendar-sym"></use></svg>
+									</div>
+									<span class="label main__info-title">25–26 октября 2022 года</span>
+								</div>
+								<div class="main__info">
+									<div class="main__info-icon">
+										<svg><use href="./assets/img/sprite.svg#location-sym"></use></svg>
+									</div>
+									<span class="label main__info-title">Федеральная территория «Сириус»</span>
+								</div>
+							</div>
+							<button class="btn is-accent main__btn">Регистрация</button>
+						</div>
+					</div>
+				</div>
+				<div class="main__img">
+					<picture>
+						<source srcset="../assets/img/bg_1_mob.jpg" media="(max-width: 450px)" />
+						<img src="../assets/img/bg_1.jpg" alt="" />
+					</picture>
+				</div>
+			</main>
+			<div class="content">
+				<section class="section about">
+					<div class="about__container">
+						<div class="s-header">
+							<h2 class="title-1 s-header__title about__title">О КОНФЕРЕНЦИИ</h2>
+							<div class="about__text">
+								<p>
+									«Взаимодействие вузов и работодателей в&nbsp;новых условиях рынка труда» —
+									международная конференция, призванная осветить широкий ряд вопросов на стыке системы
+									образования и рынка труда.
+								</p>
+								<p>
+									Спикерами конференции станут работодатели, представители органов законодательной
+									и&nbsp;исполнительной власти, руководители российских и зарубежных вузовских центров
+									карьеры и Ассоциаций выпускников.
+								</p>
+							</div>
+						</div>
+						<div class="about__body">
+							<span class="title-2 about__subtitle">КЛЮЧЕВЫЕ ТЕМЫ</span>
+							<ul class="about__list">
+								<li class="about__item">
+									Международный и российский опыт по карьерному сопровождению студентов: лучшие кейсы
+								</li>
+								<li class="about__item">
+									Влияние изменений рынка на работу высшей школы в сфере трудоустройства студентов и
+									выпускников
+								</li>
+								<li class="about__item">
+									Сотрудничество работодателей с вузами: перспективы и сложности
+								</li>
+								<li class="about__item">
+									Дискуссионные темы в карьерном сопровождении: индивидуальный подход или
+									цифровизация? Релокация или удержание на российском рынке?
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			{% include "sections/footer.html" %}
+		</div>
+
+		<script src="./assets/js/bundle.js"></script>
+	</body>
+</html>
